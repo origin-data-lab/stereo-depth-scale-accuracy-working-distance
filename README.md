@@ -46,3 +46,21 @@ Licence: to be decided (candidates: MIT for code, CC BY 4.0 for CSV) — not app
 [Official Website](https://origindatalab.io/) | [Technical Field Notes](https://origindatalab.io/technical-field-notes/) | [English Note](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html) | [Korean Note](https://origindatalab.io/ko/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
 
 [GitHub](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Hugging Face](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Kaggle Dataset](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) | [Kaggle Notebook](https://www.kaggle.com/code/origindatalab/stereo-depth-scale-accuracy-working-distance)
+
+## Visual evidence
+
+### fn09 centre vs edges
+
+![fn09 centre vs edges](figures/fn09_centre_vs_edges.png)
+
+### fn09 scale error vs distance
+
+![fn09 scale error vs distance](figures/fn09_scale_error_vs_distance.png)
+
+### fn09 tape vs stereo
+
+![fn09 tape vs stereo](figures/fn09_tape_vs_stereo.png)
+
+### fn12 targets on wall
+
+![fn12 targets on wall](figures/fn12_targets_on_wall.jpg)
