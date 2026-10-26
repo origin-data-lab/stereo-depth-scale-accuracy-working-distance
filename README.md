@@ -39,14 +39,6 @@ Licence: to be decided (candidates: MIT for code, CC BY 4.0 for CSV) — not app
 
 ---
 
-## Explore Origin Data Lab
-
-[![GitHub](https://img.shields.io/badge/GitHub-Open-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Hugging Face](https://img.shields.io/badge/Hugging_Face-Open-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Kaggle](https://img.shields.io/badge/Kaggle-Open-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) [![Technical Note](https://img.shields.io/badge/Technical_Note-Open-0B1220?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
-
-[Official Website](https://origindatalab.io/) | [Technical Field Notes](https://origindatalab.io/technical-field-notes/) | [English Note](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html) | [Korean Note](https://origindatalab.io/ko/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
-
-[GitHub](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Hugging Face](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Kaggle Dataset](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) | [Kaggle Notebook](https://www.kaggle.com/code/origindatalab/stereo-depth-scale-accuracy-working-distance)
-
 ## Visual evidence
 
 ### fn09 centre vs edges
@@ -64,3 +56,13 @@ Licence: to be decided (candidates: MIT for code, CC BY 4.0 for CSV) — not app
 ### fn12 targets on wall
 
 ![fn12 targets on wall](figures/fn12_targets_on_wall.jpg)
+
+---
+
+## Explore Origin Data Lab
+
+[![GitHub](https://img.shields.io/badge/GitHub-Open-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Hugging Face](https://img.shields.io/badge/Hugging_Face-Open-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Kaggle](https://img.shields.io/badge/Kaggle-Open-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) [![Technical Note](https://img.shields.io/badge/Technical_Note-Open-0B1220?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
+
+[Official Website](https://origindatalab.io/) | [Technical Field Notes](https://origindatalab.io/technical-field-notes/) | [English Note](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html) | [Korean Note](https://origindatalab.io/ko/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
+
+[GitHub](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Hugging Face](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Kaggle Dataset](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) | [Kaggle Notebook](https://www.kaggle.com/code/origindatalab/stereo-depth-scale-accuracy-working-distance)
