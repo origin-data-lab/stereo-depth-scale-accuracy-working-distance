@@ -1,0 +1,84 @@
+<!-- ODL_QUALITY_V2 -->
+
+# Origin Data Lab · Technical Field Note #09
+
+**ODL Stereo Depth-Scale Accuracy 25-90 cm**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Open-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Hugging Face](https://img.shields.io/badge/Hugging_Face-Open-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Kaggle](https://img.shields.io/badge/Kaggle-Open-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) [![Technical Note](https://img.shields.io/badge/Technical_Note-Open-0B1220?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
+
+[English technical note](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html) | [Korean technical note](https://origindatalab.io/ko/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
+
+---
+
+# ODL Field Note #09 — Stereo depth-scale accuracy (25–90 cm)
+Reproduction code and derived measurements for Origin Data Lab Technical Field Note #09.
+
+## What it measures
+Stereo depth-scale error of a fisheye stereo+IMU rig (R8 OEM, ODL-EGO S1 configuration) against ChArUco squares measured with a steel rule.
+
+## Reproduce
+```bash
+pip install opencv-contrib-python-headless==4.10.0.84 numpy pandas pyyaml matplotlib
+export ODL_DATA=analysis/data          # detection JSONs + factory_calibration.yaml
+PYTHONPATH=analysis python3 analysis/a1_depth_scale.py out
+PYTHONPATH=analysis python3 analysis/make_figures.py out
+```
+`factory_calibration.yaml` is manufacturer material and is **not included**; without it the triangulation step cannot be reproduced. Detection JSONs (corner coordinates) are included.
+
+## Outputs
+| file | content |
+|---|---|
+| a1_per_frame.csv | one row per stereo frame: distance, tilt, image position, square size, scale error |
+| a1_scale_summary.csv | medians / IQR / bootstrap CI per distance bin and edge region |
+| a1_tape_holds.csv | tape-measure holds vs stereo distance with linear fit |
+
+## Limits
+Single unit, single day, automated analysis only. See methodology.md.
+
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0) for derived data and figures; MIT for code.
+
+---
+
+## Visual evidence
+
+### fn09 centre vs edges
+
+![fn09 centre vs edges](figures/fn09_centre_vs_edges.png)
+
+### fn09 scale error vs distance
+
+![fn09 scale error vs distance](figures/fn09_scale_error_vs_distance.png)
+
+### fn09 tape vs stereo
+
+![fn09 tape vs stereo](figures/fn09_tape_vs_stereo.png)
+
+### fn12 targets on wall
+
+![fn12 targets on wall](figures/fn12_targets_on_wall.jpg)
+
+<!-- ODL_ENTITY_V1 -->
+## About Origin Data Lab
+
+**Origin Data Lab** (origindatalab.io, OriginDataLab Co., Ltd.) is a real-world data collection company based in **Yangyang, Gangwon State, South Korea**.
+We plan and run egocentric, stereo+IMU and field video capture for physical AI and robotics teams, with documented QA such as the measurements in this dataset.
+Not affiliated with "Origin Lab" (game data) or "OriginLab" (Origin/OriginPro software).
+
+- **[Request sample data](https://origindatalab.io/contact.html?topic=sample&note=fn09&utm_source=github&utm_medium=referral&utm_campaign=field-notes)**: stereo+IMU or phone+IMU egocentric capture
+- **[Custom data collection](https://origindatalab.io/data-services.html?utm_source=github&utm_medium=referral)**: field capture in South Korea and Bangladesh
+- **[All technical field notes](https://origindatalab.io/technical-field-notes/?utm_source=github&utm_medium=referral)**
+
+---
+
+## Explore Origin Data Lab
+
+[![GitHub](https://img.shields.io/badge/GitHub-Open-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Hugging Face](https://img.shields.io/badge/Hugging_Face-Open-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) [![Kaggle](https://img.shields.io/badge/Kaggle-Open-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) [![Technical Note](https://img.shields.io/badge/Technical_Note-Open-0B1220?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
+
+[Official Website](https://origindatalab.io/) | [Technical Field Notes](https://origindatalab.io/technical-field-notes/) | [English Note](https://origindatalab.io/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html) | [Korean Note](https://origindatalab.io/ko/technical-field-notes/stereo-depth-scale-accuracy-working-distance.html)
+
+[GitHub](https://github.com/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Hugging Face](https://huggingface.co/datasets/origin-data-lab/stereo-depth-scale-accuracy-working-distance) | [Kaggle Dataset](https://www.kaggle.com/datasets/origindatalab/odl-stereo-depth-scale-accuracy) | [Kaggle Notebook](https://www.kaggle.com/code/origindatalab/stereo-depth-scale-accuracy-working-distance)
+
+
+## Code availability
+
+Device-specific readers and production pipeline code are withheld; see `CODE_AVAILABILITY.md`. Figures and result tables are complete.
